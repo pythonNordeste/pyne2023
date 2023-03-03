@@ -46,6 +46,8 @@ table {
 
 body{
     background-color:#ffecd4;
+    font-family: Barlow, Helvetica, sans-serif;
+    color: #423d38;
 }
 
 .main{
@@ -72,17 +74,68 @@ body{
     width: 50%;
     padding: 10px;
     text-align: right;
+    font-weight: 700;
 }
 
 .intro-heading{
     font-size: 3rem;
     line-height: 3rem;
+
 }
 
 .social-media{
-
+    font-weight: 600;
     text-align: right;
 }
-.social-media--icons{
+.social-media--icons img{
+    /* display: flex;
+    flex-direction: column;
+    justify-content: flex-end; */
     width: 24px;
+    /* text-align: center; */
+}
+.social-media--icons a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.social-media--icons ul {
+    float: left;
+    display: inline;
+}
+
+.social-media--icons li {
+    float: left;
+    display: block;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+@media (max-width: 1200px)
+{
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .intro, .social-media{
+        text-align: center;
+        margin: 0;
+    }
+    .intro-heading{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .social-media{
+        font-weight: 600;
+        text-align: center;
+        font-size: .5rem;
+        margin: 0;
+    }
+
+    /* .social-media--icons {
+        margin: 0;
+    } */
+
 }
