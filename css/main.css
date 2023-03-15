@@ -47,44 +47,7 @@ body{
     color: #423d38;
 }
 
-
-/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
-@media (max-width: 767px) {
-    body {
-      font-size: 16px;
-    }
-
-    .social-media{
-      font-weight: 600;
-      text-align: right;
-      margin-top: 2rem;
-      font-size: 1.25rem;
-    }
-
-    .footer {
-      font-size: .25rem;
-      text-align: center;
-    }
-
-}
-
-/* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
-@media (max-width: 575px) {
-    body {
-      font-size: 14px;
-    }
-
-    .main-logo{
-      max-width: 130px;
-    }
-
-    .footer {
-      font-size: .5rem;
-    }
-}
-
-@media (max-width: 1200px)
-{
+@media (max-width: 1024px) {
     .main{
         flex-direction: column;
         justify-content: center;
@@ -107,9 +70,84 @@ body{
       align-self: center;
       font-size: .5rem;
     }
+}
 
+/* Regras de estilo para dispositivos com largura a partir de 768 pixels a 1024px (tablets e alguns smartphones) */
+
+@media (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+    .footer {
+      display: inline-block;
+      text-align: center;
+      padding-top: 6rem;
+      margin-bottom: 2rem;
+    }
 
 }
+
+/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablets e alguns smartphones) */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+
+  .social-media{
+    font-weight: 600;
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+
+  .footer {
+    font-size: .25rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+}
+
+/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
+@media (max-width: 767px) {
+    body {
+      font-size: 16px;
+    }
+
+    .social-media{
+      font-weight: 600;
+      text-align: right;
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+
+    .footer {
+      font-size: .25rem;
+      text-align: center;
+      margin-bottom: 0px;
+      position: fixed;
+      bottom: 0px;
+      width: 100%;
+    }
+}
+
+/* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
+@media (max-width: 575px) {
+    body {
+      font-size: 14px;
+    }
+
+    .main-logo{
+      max-width: 130px;
+    }
+
+    .footer {
+      font-size: .5rem;
+      bottom: 0px;
+      position: fixed;
+      width: 100%;
+    }
+}
+
 
 body{
   background: hsla(191, 60%, 89%, 1);
@@ -148,7 +186,6 @@ body{
   grid-template: 'main-hero 200px main-logo';
   grid-template-columns: 2fr 1fr 2fr;
   column-gap: 5px;
-  /* height: 300px; */
   width: 100%;
   z-index: -1;
   margin-bottom: 2rem;
@@ -230,17 +267,6 @@ body{
   font-weight: 400;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-
-  margin: auto;
-  font-weight: 400;
-  margin-bottom: 2rem;
-}
-
-
-
 .social-media ul li a {
   display: flex;
   justify-content: flex-start;
@@ -249,6 +275,16 @@ body{
   align-items: flex-end;
   flex-direction: row;
 }
+
+.footer {
+  display: flex;
+  justify-content: center;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  margin: auto;
+  text-align: center;
+}
+
 
 .footer--note {
   font-size: 1rem;
