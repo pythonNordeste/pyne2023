@@ -121,7 +121,7 @@ body{
 }
 
 /* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
-@media (max-width: 767px) {
+@media (max-width: 860px) {
     body {
       font-size: 16px;
     }
@@ -133,13 +133,13 @@ body{
       font-size: 1.25rem;
     }
 
-    .footer {
-      font-size: .25rem;
-      text-align: center;
-      margin-bottom: 0px;
-      position: fixed;
-      bottom: 0px;
-      width: 100%;
+    .main-hero{
+      display: none;
+    }
+
+    .main--descricao-callout{
+      font-size: .75rem;
+      color:blue;
     }
 }
 
@@ -153,12 +153,6 @@ body{
       max-width: 130px;
     }
 
-    .footer {
-      font-size: .5rem;
-      bottom: 0px;
-      position: fixed;
-      width: 100%;
-    }
 }
 
 
@@ -173,37 +167,40 @@ body{
   background-attachment: fixed;
 }
 
-.intro--descricao-callout{
-    display: flex;
-    max-width: 100%;
-    justify-content: center;
+.main--descricao-callout{
   font-weight: 700;
     font-size: 2rem;
   padding: 1rem;
+  color: red;
 }
+
+
+.main-chamada {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+}
+
 
 .main-hero{
   left: 0px;
-  max-width: 100%;
-  /* height: auto; */
-  z-index: 3;
-  grid-area: main-hero;
+  z-index: -1;
+  max-height: 465px;
 }
 
 .main-logo{
   max-width: 60%;
   height: auto;
-  grid-area: main-logo;
   margin-right: 0rem;
+  z-index: -1;
   margin-top: 3.75rem;
 }
 
 .main {
-  display: grid;
-  grid-template: 'main-hero 200px main-logo';
-  grid-template-columns: 2fr 1fr 2fr;
-  column-gap: 5px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
   z-index: -1;
   margin-bottom: 2rem;
 }
@@ -353,11 +350,14 @@ body{
 
 .footer {
   display: flex;
+  align-items: center;
   justify-content: center;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  margin: auto;
+  flex-direction: column;
   text-align: center;
+  background: red;
+  color: #fff;
+  max-width: 100%;
+  line-height: 3rem;
 }
 
 
