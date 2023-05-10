@@ -141,6 +141,16 @@ body{
       font-size: .75rem;
       color:blue;
     }
+
+    .localizacao{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .localizacao--texto {
+      padding-bottom: 1rem;
+      align-items: center;
+    }
 }
 
 /* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
@@ -182,9 +192,17 @@ body{
   align-items: center;
 }
 
+.main {
+  display: flex;
+  justify-content: space-around;
+  max-width: 100%;
+  z-index: -1;
+  margin-bottom: 2rem;
+}
 
 .main-hero{
   left: 0px;
+  position: absolute;
   z-index: -1;
   max-height: 465px;
 }
@@ -195,14 +213,6 @@ body{
   margin-right: 0rem;
   z-index: -1;
   margin-top: 3.75rem;
-}
-
-.main {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  z-index: -1;
-  margin-bottom: 2rem;
 }
 
 .intro {
@@ -267,12 +277,13 @@ body{
     background-size: cover;
 }
 
-.patrocinio-texto h2{
+.patrocinio-texto h2, .localizacao--texto h2{
     font-size:1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     margin-right: .75rem;
 }
+
 .patrocinio-texto h2, .patrocinio-texto p{
     color:#000;
 }
@@ -294,6 +305,20 @@ body{
     border-radius: 8px;
     background-color: #299BA6;
 }
+
+.localizacao {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+  align-items:center;
+  background-color:hsla(25, 85%, 69%, 1);
+}
+
+.mapouter{
+  border-radius: 20px;
+  max-width: 100%;
+}
+
 .social-media{
   display: flex;
   flex-direction: column;
