@@ -51,7 +51,11 @@ body{
     display: flex;
     justify-content: space-around;
     background-color: #f3a56d;
-    padding: 1rem 1rem;
+    padding: .75rem;
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    width: 100%;
 }
 
 .navbar > .nav-link:hover{
@@ -118,6 +122,10 @@ body{
     text-align: center;
     padding-bottom: 1rem;
   }
+
+  .navbar {
+    flex-direction: row;
+}
 }
 
 /* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
