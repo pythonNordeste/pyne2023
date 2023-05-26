@@ -451,3 +451,27 @@ body{
 .footer--note {
   font-size: 1rem;
 }
+
+.c4p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.btn-c4p {
+  padding: 10px 20px;
+  color: #ffffff; 
+  background-color: #f7931e; 
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  text-decoration: none;
+}
+
+.btn-c4p:hover {
+  background-color: #f7931e; 
+  box-shadow: 0 0 10px #f7931e, 0 0 20px #f7931e, 0 0 40px #f7931e;
+}
