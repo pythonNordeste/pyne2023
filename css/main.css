@@ -171,6 +171,16 @@ body{
       max-width: 130px;
     }
 
+    .patrocinio--section {
+      display: flex;
+      flex-direction: column;
+  }
+
+  iframe {
+    width: auto;
+  }
+
+
 }
 
 
@@ -275,43 +285,68 @@ body{
   background-color: #81e281;
 }
 
-.patrocinio {
+.sponsor {
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     padding: 3rem;
     background-image: url("../img/assets/Fitinhas_bg.png");
     background-repeat: no-repeat;
-    background-position: 50% 0;
+    background-position: 70% 0;
     background-size: cover;
 }
 
-.patrocinio-texto h2, .localizacao--texto h2{
+.sponsor h2, .localizacao--texto h2 {
+  padding-bottom: 1rem;
+  font-size: 28px;
+  font-weight: 700;
+  color:#141414;
+}
+  .patrocinio--section {
+    display: flex;
+}
+
+.patrocinio-texto h3, .localizacao--texto h3{
     font-size:1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    margin-right: .75rem;
+    margin-right: 1rem;
 }
 
-.patrocinio-texto h2, .patrocinio-texto p{
+.patrocinio-texto h3, .patrocinio-texto p{
     color:#000;
 }
 
-.patrocinio a {
+.sponsor a {
     text-decoration: none;
+    color:#141414;
 }
 
-.patrocinio button {
-     border: 0;
+.sponsor a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+.sponsor button {
+    border: 0;
     border-radius: 8px;
     background-color: #e0ecec;
-    color:#fff;
     font-weight: 500;
+    margin-top: .5rem;
+    padding: 8px;
 }
 
-.patrocinio button:hover{
-    color: #fff;
+.sponsor button:hover{
     border-radius: 8px;
     background-color: #299BA6;
+    border:4px solid hsla(56, 59%, 86%, 1)
+}
+
+.sponsor button:active{
+  color:#141414;
+  border-radius: 8px;
+  background-color:hsla(56, 59%, 86%, 1);
+  border:4px solid #299BA6;
 }
 
 .localizacao {
