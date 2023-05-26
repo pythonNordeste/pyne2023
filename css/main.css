@@ -257,6 +257,17 @@ body{
     font-size: 1rem;
 }
 
+.intro--orientacoes img {
+  max-width: 60px;
+}
+
+.intro--orientacoes {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .social-media{
   margin: auto;
   max-width: 100%;
@@ -355,6 +366,10 @@ body{
   padding: 3rem;
   align-items:center;
   background-color:hsla(25, 85%, 69%, 1);
+}
+
+.orientacoes {
+  background-color: #182C93;
 }
 
 .mapouter{
