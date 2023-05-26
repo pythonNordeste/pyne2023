@@ -247,6 +247,10 @@ body{
     font-size: 1rem;
 }
 
+.intro-cidade--callout {
+  text-align: center;
+}
+
 .social-media{
   margin: auto;
   max-width: 100%;
