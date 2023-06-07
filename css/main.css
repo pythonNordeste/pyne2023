@@ -254,7 +254,8 @@ body{
 
 .intro-cidade p{
     margin:2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 .intro--orientacoes img {
@@ -288,6 +289,7 @@ body{
 
 .intro--descricao{
   margin-top: .75rem;
+  max-width: 1280px;
 }
 
 .left {
