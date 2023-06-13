@@ -1,5 +1,4 @@
 /* CSS Reset */
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -40,13 +39,11 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 body{
     background-color:#ffecd4;
     font-family: Barlow, Helvetica, sans-serif;
     color: #423d38;
 }
-
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -57,19 +54,16 @@ body{
     overflow: hidden;
     width: 100%;
 }
-
 .navbar > .nav-link:hover{
     border-radius: 5px;
     border-color: white;
     font-weight: 500;
 }
-
 @media (max-width: 1024px) {
     .main{
         flex-direction: column;
         justify-content: center;
     }
-
     .intro--descricao{
         margin: 0;
         font-size: .75rem;
@@ -78,112 +72,88 @@ body{
         font-size: 1rem;
         line-height: 1rem;
     }
-
     .main-logo{
       max-width: 30%;
     }
-
     .footer--note {
       align-self: center;
       font-size: .5rem;
     }
 }
-
 /* Regras de estilo para dispositivos com largura a partir de 768 pixels a 1024px (tablets e alguns smartphones) */
-
 @media (min-device-width: 768px)
   and (max-device-width: 1024px)
   and (-webkit-min-device-pixel-ratio: 1) {
-
     .footer {
       display: inline-block;
       text-align: center;
       padding-top: 6rem;
       margin-bottom: 2rem;
     }
-
 }
-
 /* Regras de estilo para dispositivos com largura menor que 768 pixels (tablets e alguns smartphones) */
 @media (max-width: 767px) {
   body {
     font-size: 16px;
   }
-
   .social-media{
     font-weight: 600;
     text-align: right;
     margin-top: 2rem;
     font-size: 1.25rem;
   }
-
   .footer {
     font-size: .25rem;
     text-align: center;
     padding-bottom: 1rem;
   }
-
   .navbar {
     flex-direction: row;
 }
 }
-
 /* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
 @media (max-width: 860px) {
     body {
       font-size: 16px;
     }
-
     .social-media{
       font-weight: 600;
       text-align: right;
       margin-top: 2rem;
       font-size: 1.25rem;
     }
-
     .main-hero{
       display: none;
     }
-
     .main--descricao-callout{
       font-size: .75rem;
       color:blue;
     }
-
     .localizacao{
       display: flex;
       flex-direction: column;
     }
-
     .localizacao--texto {
       padding-bottom: 1rem;
       align-items: center;
     }
 }
-
 /* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
 @media (max-width: 575px) {
     body {
       font-size: 14px;
     }
-
     .main-logo{
       max-width: 130px;
     }
-
     .patrocinio--section {
       display: flex;
       flex-direction: column;
   }
-
   iframe {
     width: auto;
   }
-
-
 }
-
-
 body{
   background: hsla(191, 60%, 89%, 1);
   background: linear-gradient(315deg, hsla(191, 60%, 89%, 1) 0%, hsla(56, 59%, 86%, 1) 50%, hsla(25, 85%, 69%, 1) 100%);
@@ -194,26 +164,23 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
 .main--descricao-callout{
   font-weight: 700;
     font-size: 2rem;
   padding: 1rem;
   color: red;
 }
-
-
 .main-chamada {
   display: flex;
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
 }
-
 .main {
   display: flex;
   justify-content: space-around;
   max-width: 100%;
+  z-index: -1;
   margin-bottom: 2rem;
   flex-direction: column;
 }
@@ -224,7 +191,6 @@ body{
   z-index: -1;
   max-height: 465px;
 }
-
 .main-logo{
   max-width: 60%;
   height: auto;
@@ -232,7 +198,6 @@ body{
   z-index: -1;
   margin-top: 3.75rem;
 }
-
 .intro {
   display: flex;
   margin-top: 2rem;
@@ -241,7 +206,6 @@ body{
   background-color: #299BA6;
   color:#fff;
 }
-
 .intro--descricao h2{
   margin: 2rem;
   text-align: center;
@@ -251,29 +215,22 @@ body{
   margin-top: 2rem;
   font-weight: 700;
 }
-
 .intro-cidade p{
   margin:2rem;
   font-size: 1.5rem;
-  line-height: 2rem;
-
 }
-
 .intro--orientacoes img {
   max-width: 60px;
 }
-
 .intro--orientacoes {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-
 .intro-cidade--callout {
   text-align: center;
 }
-
 .social-media{
   margin: auto;
   max-width: 100%;
@@ -282,35 +239,27 @@ body{
   font-weight: 700;
   margin-bottom: 3rem;
 }
-
 .intro-heading{
   font-size: 3rem;
   line-height: 3rem;
 }
-
 .intro--descricao{
   margin-top: .75rem;
-  max-width: 1280px;
 }
-
 .left {
   flex: 1;
   background-color: #4b4949;
 }
-
 .right {
   flex: 1;
   background-color: #81e281;
 }
-
-/* PATROCINIO */
-
 .sponsor {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    text-align: center;
-    padding: 1rem;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+   text-align: center;
+   padding: 1rem;
 }
 
 .sponsor h2, .localizacao--texto h2 {
@@ -319,6 +268,7 @@ body{
   font-weight: 700;
   color:#141414;
 }
+
 .patrocinio--section {
   display: flex;
   justify-content: center;
@@ -334,7 +284,6 @@ body{
     margin-bottom: 1rem;
     margin-right: 1rem;
 }
-
 .patrocinio-texto h3, .patrocinio-texto p{
     color:#000;
 }
@@ -345,7 +294,6 @@ body{
   font-weight: 500;
 }
 
-
 .localizacao {
   display: flex;
   justify-content: space-evenly;
@@ -353,16 +301,13 @@ body{
   align-items:center;
   background-color:hsla(25, 85%, 69%, 1);
 }
-
 .orientacoes {
   background-color: #182C93;
 }
-
 .mapouter{
   border-radius: 20px;
   max-width: 100%;
 }
-
 .social-media{
   display: flex;
   flex-direction: column;
@@ -372,42 +317,33 @@ body{
   font-size: 1.25rem;
   align-items:center;
 }
-
 .social-media--icons{
   width: 24px;
   text-align: center;
   margin-top: 2rem;
   margin-right: 1rem;
 }
-
 .navbar button{
     border:0;
     background-color: #F2A56D;
 }
-
 .navbar button:hover{
     border:white;
-
     background-color: #299BA6;
 }
-
-
 .navbar a, .social-media a, .social-media a:link, .social-media a:visited {
   text-decoration: none;
   color: #4b4949;
 }
-
 .social-media ul {
   text-align: center;
 }
-
 .social-media--icons ul {
   display: inline-block;
   padding: 10px;
   margin-top: 5px;
   font-weight: 400;
 }
-
 .social-media ul li a {
   display: flex;
   justify-content: flex-start;
@@ -416,7 +352,6 @@ body{
   align-items: flex-end;
   flex-direction: row;
 }
-
 .footer {
   display: flex;
   align-items: center;
@@ -428,19 +363,15 @@ body{
   max-width: 100%;
   line-height: 3rem;
 }
-
-
 .footer--note {
   font-size: 1rem;
 }
-
 .c4p {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
-
 .btn-c4p {
   padding: 10px 20px;
   color: #ffffff; 
@@ -452,7 +383,6 @@ body{
   transition: box-shadow 0.3s ease;
   text-decoration: none;
 }
-
 .btn-c4p:hover {
   background-color: #f7931e; 
   box-shadow: 0 0 10px #f7931e, 0 0 20px #f7931e, 0 0 40px #f7931e;
