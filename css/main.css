@@ -214,8 +214,8 @@ body{
   display: flex;
   justify-content: space-around;
   max-width: 100%;
-  z-index: -1;
   margin-bottom: 2rem;
+  flex-direction: column;
 }
 
 .main-hero{
@@ -237,9 +237,9 @@ body{
   display: flex;
   margin-top: 2rem;
   justify-content:center;
-    flex-direction: row;
-    background-color: #299BA6;
-    color:#fff;
+  flex-direction: row;
+  background-color: #299BA6;
+  color:#fff;
 }
 
 .intro--descricao h2{
@@ -249,12 +249,14 @@ body{
   line-height: 2.5rem;
   max-width: 100%;
   margin-top: 2rem;
-    font-weight: 700;
+  font-weight: 700;
 }
 
 .intro-cidade p{
-    margin:2rem;
-    font-size: 1rem;
+  margin:2rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
 }
 
 .intro--orientacoes img {
@@ -288,6 +290,7 @@ body{
 
 .intro--descricao{
   margin-top: .75rem;
+  max-width: 1280px;
 }
 
 .left {
