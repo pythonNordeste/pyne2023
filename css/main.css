@@ -44,10 +44,12 @@ body{
     font-family: Barlow, Helvetica, sans-serif;
     color: #423d38;
 }
+
+
 .navbar {
     display: flex;
     justify-content: space-around;
-    background-color: #f3a56d;
+    background-color: #f7931e;
     padding: .75rem;
     position: fixed;
     top: 0;
@@ -146,7 +148,7 @@ body{
     .main-logo{
       max-width: 130px;
     }
-    .patrocinio--section {
+    .sponsor--section {
       display: flex;
       flex-direction: column;
   }
@@ -219,18 +221,22 @@ body{
   margin:2rem;
   font-size: 1.5rem;
 }
+
 .intro--orientacoes img {
   max-width: 60px;
 }
+
 .intro--orientacoes {
   align-items: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .intro-cidade--callout {
   text-align: center;
 }
+
 .social-media{
   margin: auto;
   max-width: 100%;
@@ -239,27 +245,33 @@ body{
   font-weight: 700;
   margin-bottom: 3rem;
 }
+
 .intro-heading{
   font-size: 3rem;
   line-height: 3rem;
 }
+
 .intro--descricao{
   margin-top: .75rem;
 }
+
 .left {
   flex: 1;
   background-color: #4b4949;
 }
+
 .right {
   flex: 1;
   background-color: #81e281;
 }
+
 .sponsor {
    display: flex;
    flex-wrap: wrap;
    justify-content: space-evenly;
    text-align: center;
    padding: 1rem;
+   flex-direction: column;
 }
 
 .sponsor h2, .localizacao--texto h2 {
@@ -269,7 +281,7 @@ body{
   color:#141414;
 }
 
-.patrocinio--section {
+.sponsor--section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -277,18 +289,32 @@ body{
   column-gap: 2rem;
 }
 
+.sponsors-list {
+  align-self: center;
+  text-align: center;
+}
 
-.patrocinio-texto h3, .localizacao--texto h3{
+.sponsor-texto h3, .sponsors-list h3, .localizacao--texto h3{
     font-size:1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
-.patrocinio-texto h3, .patrocinio-texto p{
+
+
+.sponsors-list img {
+  height: auto;
+  width: auto;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 1rem;
+}
+
+.sponsor-texto h3, .sponsor-texto p{
     color:#000;
 }
 
-.patrocinio-texto p{
+.sponsor-texto p{
   font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -299,15 +325,17 @@ body{
   justify-content: space-evenly;
   padding: 3rem;
   align-items:center;
-  background-color:hsla(25, 85%, 69%, 1);
 }
+
 .orientacoes {
   background-color: #182C93;
 }
+
 .mapouter{
   border-radius: 20px;
   max-width: 100%;
 }
+
 .social-media{
   display: flex;
   flex-direction: column;
@@ -317,33 +345,40 @@ body{
   font-size: 1.25rem;
   align-items:center;
 }
+
 .social-media--icons{
   width: 24px;
   text-align: center;
   margin-top: 2rem;
   margin-right: 1rem;
 }
+
 .navbar button{
     border:0;
     background-color: #F2A56D;
 }
+
 .navbar button:hover{
     border:white;
     background-color: #299BA6;
 }
+
 .navbar a, .social-media a, .social-media a:link, .social-media a:visited {
   text-decoration: none;
   color: #4b4949;
 }
+
 .social-media ul {
   text-align: center;
 }
+
 .social-media--icons ul {
   display: inline-block;
   padding: 10px;
   margin-top: 5px;
   font-weight: 400;
 }
+
 .social-media ul li a {
   display: flex;
   justify-content: flex-start;
@@ -352,30 +387,32 @@ body{
   align-items: flex-end;
   flex-direction: row;
 }
+
 .footer {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  background: red;
-  color: #fff;
   max-width: 100%;
-  line-height: 3rem;
 }
+
 .footer--note {
   font-size: 1rem;
+  color: inherit;
 }
+
 .c4p {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
 }
+
 .btn-c4p {
   padding: 10px 20px;
-  color: #ffffff; 
-  background-color: #f7931e; 
+  color: #ffffff;
+  background-color: #f7931e;
   font-size: 18px;
   border: none;
   border-radius: 5px;
@@ -383,7 +420,8 @@ body{
   transition: box-shadow 0.3s ease;
   text-decoration: none;
 }
+
 .btn-c4p:hover {
-  background-color: #f7931e; 
+  background-color: #f7931e;
   box-shadow: 0 0 10px #f7931e, 0 0 20px #f7931e, 0 0 40px #f7931e;
 }
