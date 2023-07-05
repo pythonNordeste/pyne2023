@@ -271,6 +271,7 @@ body{
    justify-content: space-evenly;
    text-align: center;
    padding: 1rem;
+   padding-top: 3rem;
    flex-direction: column;
 }
 
