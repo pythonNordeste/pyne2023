@@ -295,13 +295,18 @@ body{
   text-align: center;
 }
 
+.sponsors-list--apoiadores {
+  padding-top: 3rem;
+}
+
+
+
 .sponsor-texto h3, .sponsors-list h3, .localizacao--texto h3{
     font-size:1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
     /* margin-right: 1rem; */
 }
-
 
 .sponsors-list img {
   height: auto;
@@ -310,6 +315,7 @@ body{
   max-height: 100px;
   margin-top: 1rem;
 }
+
 
 .sponsor-texto h3, .sponsor-texto p{
     color:#000;
