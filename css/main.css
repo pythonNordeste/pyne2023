@@ -295,12 +295,6 @@ body{
   text-align: center;
 }
 
-.sponsors-list--apoiadores {
-  padding-top: 3rem;
-}
-
-
-
 .sponsor-texto h3, .sponsors-list h3, .localizacao--texto h3{
     font-size:1.25rem;
     font-weight: 700;
@@ -311,7 +305,7 @@ body{
 .sponsors-list img {
   height: auto;
   width: auto;
-  max-width: 100px;
+  max-width: 200px;
   max-height: 100px;
   margin-top: 1rem;
 }
@@ -325,6 +319,17 @@ body{
   font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+
+.sponsors-list--apoiadores {
+  padding-top: 3rem;
+}
+
+.sponsors-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 
 .localizacao {
