@@ -45,6 +45,9 @@ body{
     color: #423d38;
 }
 
+.bg-white {
+  background-color: white;
+}
 
 .navbar {
     display: flex;
@@ -291,6 +294,7 @@ body{
 }
 
 .sponsors-list {
+  padding-bottom: 3rem;
   align-self: center;
   text-align: center;
 }
@@ -310,7 +314,6 @@ body{
   margin-top: 1rem;
 }
 
-
 .sponsor-texto h3, .sponsor-texto p{
   color:#000;
 }
@@ -323,6 +326,7 @@ body{
 
 .sponsors-list--apoiadores {
   padding-top: 3rem;
+
 }
 
 .sponsors-flex {
@@ -330,12 +334,18 @@ body{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 @media (min-width: 768px) {
   .sponsors-flex {
     flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sponsors-flex {
+    gap: 5rem;
   }
 }
 
