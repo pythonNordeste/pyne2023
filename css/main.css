@@ -45,6 +45,9 @@ body{
     color: #423d38;
 }
 
+.bg-white {
+  background-color: white;
+}
 
 .navbar {
     display: flex;
@@ -291,6 +294,7 @@ body{
 }
 
 .sponsors-list {
+  padding-bottom: 3rem;
   align-self: center;
   text-align: center;
 }
@@ -302,23 +306,47 @@ body{
     /* margin-right: 1rem; */
 }
 
-
 .sponsors-list img {
   height: auto;
   width: auto;
-  max-width: 100px;
+  max-width: 200px;
   max-height: 100px;
   margin-top: 1rem;
 }
 
 .sponsor-texto h3, .sponsor-texto p{
-    color:#000;
+  color:#000;
 }
 
 .sponsor-texto p{
   font-size: 1rem;
   margin-bottom: 1rem;
   font-weight: 500;
+}
+
+.sponsors-list--apoiadores {
+  padding-top: 3rem;
+
+}
+
+.sponsors-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .sponsors-flex {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1440px) {
+  .sponsors-flex {
+    gap: 5rem;
+  }
 }
 
 .localizacao {
