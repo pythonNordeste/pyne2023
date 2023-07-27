@@ -439,7 +439,7 @@ body{
   height: 100px;
 }
 
-.btn-c4p {
+.btn-c4p, .btn-subscriptions {
   padding: 10px 20px;
   color: #ffffff;
   background-color: #f7931e;
@@ -454,4 +454,13 @@ body{
 .btn-c4p:hover {
   background-color: #f7931e;
   box-shadow: 0 0 10px #f7931e, 0 0 20px #f7931e, 0 0 40px #f7931e;
+}
+
+.btn-subscriptions {
+  background-color: #182C93;
+}
+
+.btn-subscriptions:hover {
+  background-color:#6177E5;
+  box-shadow: 0 0 10px#6177E5, 0 0 20px#6177E5, 0 0 40px#6177E5;
 }
