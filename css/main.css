@@ -67,9 +67,7 @@ body{
   font-weight: 500;
 }
 
-.iconoir-menu {
-  display: none;
-}
+
 
 @media screen and (max-width: 768px) {
 
@@ -110,7 +108,14 @@ body{
   }
 }
 
+@media (min-width: 1024px){
+    .icon {
+     display: none;
+  }
+}
+
 @media (max-width: 1024px) {
+
     .main{
         flex-direction: column;
         justify-content: center;
