@@ -261,6 +261,8 @@ body{
   flex-direction: row;
   background-color: #299BA6;
   color:#fff;
+  max-width: 900px;
+  margin: 0 auto;
 }
 .intro--descricao h2{
   margin: 2rem;
@@ -413,12 +415,13 @@ body{
 }
 
 .orientacoes {
-  background-color: #182C93;
+  background-color: white;
+  color: #141414;
 }
 
-.mapouter{
-  border-radius: 20px;
-  max-width: 100%;
+.mapouter {
+    border-radius: 20px;
+    max-width: 100%;
 }
 
 .social-media{
