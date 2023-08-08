@@ -53,7 +53,7 @@ body{
 .navbar {
   display: flex;
   justify-content: space-around;
-  /* background-color: #f7931e; */
+  background-color: #fff;
   padding: .75rem;
   position: fixed;
   top: 0;
@@ -67,7 +67,9 @@ body{
   font-weight: 500;
 }
 
-
+.nav-logo{
+  width: 42px;
+}
 
 @media screen and (max-width: 768px) {
 
@@ -96,6 +98,7 @@ body{
     text-decoration: none;
     color: white;
     padding: 20px;
+    font-size: 14px;
   }
   .navbarresponsive .nav-link:hover {
     /* background-color: #FBC689; */
@@ -128,9 +131,7 @@ body{
         font-size: 1rem;
         line-height: 1rem;
     }
-    .main-logo{
-      max-width: 30%;
-    }
+
     .footer--note {
       align-self: center;
       font-size: .5rem;
@@ -182,7 +183,7 @@ body{
       display: none;
     }
     .main--descricao-callout{
-      font-size: .75rem;
+      /* font-size: .75rem; */
       color:blue;
     }
     .localizacao{
@@ -226,27 +227,33 @@ body{
   padding: 1rem;
   color: red;
 }
-.main-chamada {
+
+.header--intro {
   display: flex;
   flex-direction: column;
   justify-content:space-around;
   align-items: center;
-}
-.main {
-  display: flex;
-  justify-content: space-around;
-  max-width: 100%;
-  z-index: -1;
-  margin-bottom: 2rem;
-  flex-direction: column;
+  margin: 3rem;
 }
 
-.main-hero{
+.header {
+  display: flex;
+  justify-content: flex-end;
+  z-index: -1;
+  margin: 4rem;
+  flex-direction: row;
+  padding: 3rem;
+  align-items: center;
+}
+
+.header--hero{
   left: 0px;
-  position: absolute;
+  position: relative;
   z-index: -1;
   max-height: 465px;
+  border-radius: 80px;
 }
+
 .main-logo{
   max-width: 60%;
   height: auto;
@@ -259,7 +266,6 @@ body{
   margin-top: 2rem;
   justify-content:center;
   flex-direction: row;
-  /* background-color: #299BA6; */
   color:#141414;
   max-width: 900px;
   margin: 0 auto;
