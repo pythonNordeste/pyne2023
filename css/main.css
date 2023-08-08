@@ -387,22 +387,22 @@ body{
 
 }
 
-.sponsors-flex, .sponsors-list__bronze {
+.sponsors-flex, .sponsors-list__bronze, .sponsors-list__ouro {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  padding: 1rem;
 }
 
 @media (min-width: 768px) {
-  .sponsors-flex, .sponsors-list__bronze{
+  .sponsors-flex, .sponsors-list__bronze, .sponsors-list__ouro {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1440px) {
-  .sponsors-flex, .sponsors-list__bronze {
+  .sponsors-flex, .sponsors-list__bronze, .sponsors-list__ouro {
     gap: 5rem;
   }
 }
