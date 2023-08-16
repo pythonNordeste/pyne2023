@@ -392,7 +392,7 @@ body{
   align-items: center;
   justify-content: center;
   padding: 1rem;
-  gap:40px;
+  gap:2.5rem;
 }
 
 @media (min-width: 768px) {
@@ -403,7 +403,7 @@ body{
 
 @media (min-width: 1440px) {
   .sponsors-flex, .sponsors-list__bronze, .sponsors-list__ouro {
-    gap: 5rem;
+    gap: 2rem;
   }
 }
 
