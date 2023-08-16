@@ -364,7 +364,6 @@ body{
   width: auto;
   max-width: 200px;
   max-height: 100px;
-  margin-top: 1rem;
 }
 
 .sponsor-texto h3,.sponsors-list h4, .sponsor-texto p{
@@ -393,6 +392,7 @@ body{
   align-items: center;
   justify-content: center;
   padding: 1rem;
+  gap:40px;
 }
 
 @media (min-width: 768px) {
