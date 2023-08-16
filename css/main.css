@@ -59,6 +59,7 @@ body{
   top: 0;
   overflow: hidden;
   width: 100%;
+  z-index: 10;
 }
 
 .navbar > .nav-link:hover{
@@ -68,152 +69,10 @@ body{
 }
 
 .nav-logo{
-  width: 42px;
+  width: 60px;
 }
 
-@media screen and (max-width: 768px) {
-
-  .navbar a:not(:last-child) {display: none;}
-  .navbar a.icon {
-    color: black;
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbarresponsive {
-    background-color: #f7931e;
-  }
-  .navbarresponsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px;
-  }
-  .navbarresponsive .nav-link {
-    float: none;
-    display: flex;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-  }
-  .navbarresponsive .nav-link:hover {
-    /* background-color: #FBC689; */
-    color: #141414;
-  }
-
-  .navbarresponsive .nav-link:focus {
-    box-shadow: 0 0 10px#6177E5, 0 0 20px#6177E5, 0 0 40px#6177E5;
-    background-color: #6177E5;
-  }
-}
-
-@media (min-width: 1024px){
-    .icon {
-     display: none;
-  }
-}
-
-@media (max-width: 1024px) {
-
-    .main{
-        flex-direction: column;
-        justify-content: center;
-    }
-    .intro--descricao{
-        margin: 0;
-        font-size: .75rem;
-    }
-    .intro-heading{
-        font-size: 1rem;
-        line-height: 1rem;
-    }
-
-    .footer--note {
-      align-self: center;
-      font-size: .5rem;
-    }
-}
-/* Regras de estilo para dispositivos com largura a partir de 768 pixels a 1024px (tablets e alguns smartphones) */
-@media (min-device-width: 768px)
-  and (max-device-width: 1024px)
-  and (-webkit-min-device-pixel-ratio: 1) {
-    .footer {
-      display: inline-block;
-      text-align: center;
-      padding-top: 6rem;
-      margin-bottom: 2rem;
-    }
-}
-/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablets e alguns smartphones) */
-@media (max-width: 767px) {
-  body {
-    font-size: 16px;
-  }
-  .social-media{
-    font-weight: 600;
-    text-align: right;
-    margin-top: 2rem;
-    font-size: 1.25rem;
-  }
-  .footer {
-    font-size: .25rem;
-    text-align: center;
-    padding-bottom: 1rem;
-  }
-  .navbar {
-    flex-direction: row;
-}
-}
-/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
-@media (max-width: 860px) {
-    body {
-      font-size: 16px;
-    }
-    .social-media{
-      font-weight: 600;
-      text-align: right;
-      margin-top: 2rem;
-      font-size: 1.25rem;
-    }
-    .main-hero{
-      display: none;
-    }
-    .main--descricao-callout{
-      /* font-size: .75rem; */
-      color:blue;
-    }
-    .localizacao{
-      display: flex;
-      flex-direction: column;
-    }
-    .localizacao--texto {
-      padding-bottom: 1rem;
-      align-items: center;
-    }
-}
-/* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
-@media (max-width: 575px) {
-    body {
-      font-size: 14px;
-    }
-    .main-logo{
-      max-width: 130px;
-    }
-    .sponsor--section {
-      display: flex;
-      flex-direction: column;
-  }
-  iframe {
-    width: auto;
-  }
-}
 body{
-  /* background: hsla(191, 60%, 89%, 1);
-  background: linear-gradient(315deg, hsla(191, 60%, 89%, 1) 0%, hsla(56, 59%, 86%, 1) 50%, hsla(25, 85%, 69%, 1) 100%); */
   font-family: Barlow, Helvetica, sans-serif;
   color: #4b4949;
   height: 100%;
@@ -221,17 +80,35 @@ body{
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-.main--descricao-callout{
+
+.header__callout__heading{
   font-weight: 700;
-    font-size: 2rem;
+  font-size: 3rem;
   padding: 1rem;
   color: red;
 }
 
-.header--intro {
+.header__callout__subheading{
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1rem;
+  color: #f7931e;
+}
+
+
+.header__callout__address{
+  font-weight: 500;
+  font-size: 1rem;
+  padding: 1rem;
+  color: #299BA6;
+}
+
+
+
+.header__intro {
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  /* justify-content:space-around; */
   align-items: center;
   margin: 3rem;
 }
@@ -246,7 +123,7 @@ body{
   align-items: center;
 }
 
-.header--hero{
+.header__hero{
   left: 0px;
   position: relative;
   z-index: -1;
@@ -261,27 +138,38 @@ body{
   z-index: -1;
   margin-top: 3.75rem;
 }
+
 .intro {
+  margin: auto;
   display: flex;
-  margin-top: 2rem;
-  justify-content:center;
-  flex-direction: row;
-  color:#141414;
-  max-width: 900px;
-  margin: 0 auto;
+  max-width: 1200px;
+  flex-direction: column;
+  align-items:center;
 }
-.intro--descricao h2{
+
+.intro__wrapper {
   margin: 2rem;
-  text-align: center;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  max-width: 100%;
-  margin-top: 2rem;
-  font-weight: 700;
 }
-.intro-cidade p{
+
+.intro__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  color:#141414;
+  text-align: center;
+}
+
+.intro__headline {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 2rem;
+}
+
+.intro__subheadline {
   margin:2rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 .intro--orientacoes img {
@@ -295,26 +183,16 @@ body{
   justify-content: center;
 }
 
-.intro-cidade--callout {
+.intro__city--callout {
   text-align: center;
 }
 
-.social-media{
-  margin: auto;
-  max-width: 100%;
-  padding: 10px;
-  text-align: right;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-.intro-heading{
-  font-size: 3rem;
+.intro__descritpion p{
   line-height: 3rem;
-}
-
-.intro--descricao{
+  font-size: 1.5rem;
   margin-top: .75rem;
+  margin-bottom: 1.25rem;
+  height: auto;
 }
 
 .left {
@@ -327,6 +205,14 @@ body{
   background-color: #81e281;
 }
 
+.social-media{
+  margin: auto;
+  max-width: 100%;
+  padding: 10px;
+  text-align: right;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
 .sponsor {
    display: flex;
    flex-wrap: wrap;
@@ -342,6 +228,12 @@ body{
   font-size: 1.75rem;
   font-weight: 700;
   color:#141414;
+}
+
+.localizacao--texto {
+  padding-bottom: 1rem;
+  text-align: left;
+  margin-right: 1.75rem;
 }
 
 .sponsor--section {
@@ -362,7 +254,7 @@ body{
     font-size:1.25rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    /* margin-right: 1rem; */
+    margin-right: 1rem;
 }
 
 .sponsors-list img {
@@ -528,4 +420,166 @@ body{
 .btn-subscriptions:hover {
   background-color:#6177E5;
   box-shadow: 0 0 10px#6177E5, 0 0 20px#6177E5, 0 0 40px#6177E5;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .navbar a:not(:last-child) {display: none;}
+  .navbar a.icon {
+    color: black;
+    float: right;
+    display: block;
+
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  .navbarresponsive {
+    background-color: #f7931e;
+  }
+  .navbarresponsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 20px;
+  }
+  .navbarresponsive .nav-link {
+    float: none;
+    display: flex;
+    text-align: left;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+  }
+  .navbarresponsive .nav-link:hover {
+    /* background-color: #FBC689; */
+    color: #141414;
+  }
+
+  .navbarresponsive .nav-link:focus {
+    box-shadow: 0 0 10px#6177E5, 0 0 20px#6177E5, 0 0 40px#6177E5;
+    background-color: #6177E5;
+  }
+}
+
+@media (min-width: 1024px){
+    .icon {
+     display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+    .main{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro__description{
+        margin: 0;
+        font-size: .75rem;
+    }
+    .intro-heading{
+        font-size: 1rem;
+        line-height: 1rem;
+    }
+
+    .footer--note {
+      align-self: center;
+      font-size: .5rem;
+    }
+}
+/* Regras de estilo para dispositivos com largura a partir de 768 pixels a 1024px (tablets e alguns smartphones) */
+@media (min-device-width: 768px)
+  and (max-device-width: 1024px)
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .footer {
+      display: inline-block;
+      text-align: center;
+      padding-top: 6rem;
+      margin-bottom: 2rem;
+    }
+}
+/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablets e alguns smartphones) */
+@media (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  .social-media{
+    font-weight: 600;
+    text-align: right;
+    margin-top: 2rem;
+    font-size: 1.25rem;
+  }
+  .footer {
+    font-size: .25rem;
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+  .navbar {
+    flex-direction: row;
+}
+}
+/* Regras de estilo para dispositivos com largura menor que 768 pixels (tablet) */
+@media (max-width: 860px) {
+    body {
+      font-size: 16px;
+    }
+
+    .social-media{
+      font-weight: 600;
+      text-align: right;
+      margin-top: 2rem;
+      font-size: 1.25rem;
+    }
+
+    .header {
+      display: flex;
+      justify-content: center;
+      z-index: -1;
+      flex-direction: row;
+      padding: 1rem;
+      align-items: center;
+    }
+
+    .header__hero{
+      display: none;
+    }
+
+    .header__callout{
+      color:blue;
+    }
+
+    .localizacao{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .localizacao--texto {
+      padding-bottom: 1rem;
+      align-items: center;
+      margin-right: 1.5rem;
+    }
+
+}
+/* Regras de estilo para dispositivos com largura menor que 576 pixels (celular) */
+@media (max-width: 767px) {
+    body {
+      font-size: 14px;
+    }
+
+    .main-logo{
+      max-width: 130px;
+    }
+
+    .sponsor--section {
+      display: flex;
+      flex-direction: column;
+  }
+
+  iframe {
+    width: auto;
+  }
 }
