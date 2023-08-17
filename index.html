@@ -50,14 +50,26 @@
 </head>
 
 <body>
-    <nav class="navbar" id="navbar">
-        <a class="nav-link" href="#"></a><img class="nav-logo" src="./img/assets/LOGO.png" alt=""></a>
-        <a class="nav-link" href="#intro">Sobre a cidade</a>
-        <a class="nav-link" href="#sponsor">Como patrocinar</a>
-        <a class="nav-link" href="cdc.html" target="_blank">Código de conduta</a>
-        <a class="nav-link" href="#social-media">Redes sociais</a>
-        <a class="nav-link" href="orientacoes.html" target="_blank">Orientações para a Covid-19</a>
-        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="iconoir-menu"></i></a>
+    <nav class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title">
+                <img class="nav-logo" src="./img/assets/LOGO.png" alt="">
+            </div>
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <i class="iconoir-menu-scale"></i>
+            </label>
+        </div>
+
+        <div class="nav-links">
+            <a href="#intro">Sobre a cidade</a>
+            <a href="#sponsor">Como patrocinar</a>
+            <a href="cdc.html" target="_blank">Código de conduta</a>
+            <a href="#social-media">Redes sociais</a>
+            <a href="orientacoes.html" target="_blank">Orientações para a Covid-19</a>
+        </div>
     </nav>
 
     <header class="header">
@@ -65,8 +77,8 @@
             aria-label="Fitas voando escrito Python Nordeste 2023">
         <div class="header__intro">
             <h1 class="header__callout__heading">Python Nordeste 2023</h1>
-            <h2 class="header__callout__subheading"><i class="iconoir-calendar"></i><br>22 a 24 de setembro de 2023</h2>
-            <p class="header__callout__address"><i class="iconoir-pin-alt"></i>
+            <h2 class="header__callout__subheading"><br>22 a 24 de setembro de 2023</h2>
+            <p class="header__callout__address">
                 <br><b>Escola Politécnica da UFBA - R.
                     Prof. Aristídes Novis, 2 - Federação,
                     Salvador - BA, 40210-630
@@ -227,8 +239,6 @@
                                 nordestinos </small>
                     </div>
                 </div>
-
-                <script src="js/scripts.js"></script>
             </div>
         </footer>
         <script src="https://unpkg.com/htmlincludejs"></script>
