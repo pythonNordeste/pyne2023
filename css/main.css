@@ -386,9 +386,9 @@ body {
   margin: auto;
 }
 
-.sponsor-texto .c4p {
+/* .sponsor-texto .c4p {
   margin: 60px;
-}
+} */
 
 .sponsors-list {
   padding-bottom: 3rem;
@@ -416,7 +416,8 @@ body {
 .sponsor-texto h3,
 .sponsors-list h4,
 .sponsor-texto p {
-  color: #000;
+  color: #fff;
+  margin-bottom: 1.5rem;
 }
 
 h4 {
@@ -425,11 +426,11 @@ h4 {
 }
 
 .sponsor {
-  background-color: #6177e5;
+  background-color: #141414;
 }
 
 .sponsor h2 {
-  color: #fff;
+  color: #f7931e;
 }
 
 .sponsors-list {
