@@ -102,21 +102,25 @@
   .carousel__slide:nth-child(1) {
     background-image: url("../img/assets/matheus-seiji-goto-unsplash.jpg");
     background-size: cover;
+    border-radius: 80px;
   }
 
   .carousel__slide:nth-child(2) {
     background-image: url("../img/assets/tiago-celestino-nYMQKTHRIY8-unsplash.jpg");
     background-size: cover;
+    border-radius: 80px;
     }
 
   .carousel__slide:nth-child(3) {
     background-image: url("../img/assets/julian-J6L2uT15K1o-unsplash.jpg");
     background-size: cover;
+    border-radius: 80px;
     }
 
   .carousel__slide:nth-child(4) {
     background-image: url("../img/assets/felipe-dias-WzhQKJ5q7Ms-unsplash.jpg");
     background-size: cover;
+    border-radius: 80px;
     }
 
   .carousel__snapper {
