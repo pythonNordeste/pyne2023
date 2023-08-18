@@ -50,30 +50,29 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <div class="nav-title">
-                <a href="#" class="logo">
-                    <img class="nav-logo" src="./img/assets/LOGO.png" alt="">
-                </a>
-            </div>
-        </div>
-        <div class="nav-btn">
-            <label for="nav-check">
-                <i class="iconoir-menu-scale"></i>
-            </label>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="#" class="logo">
+                <img class="nav-logo" src="./img/assets/LOGO.png" alt="">
+            </a>
         </div>
 
-        <div class="nav-links">
-            <a href="#intro">Sobre a cidade</a>
-            <a href=" https://www.eventbrite.com.br/e/python-nordeste-2023-tickets-685066200447 "
-                target=" _blank">Inscrições</a>
-            <a href="https://pretalx.com/python-nordeste-2023/schedule/" target="_blank">Grade de palestras</a>
-            <a href="#sponsor">Como patrocinar</a>
-            <a href="cdc.html" target="_blank">Código de conduta</a>
-            <a href="#social-media">Redes sociais</a>
-            <a href="orientacoes.html">Orientações para a Covid-19</a>
+        <ul class="navbar-menu" id="nav-list">
+            <li class="menu-item"><a href="#intro">Sobre a cidade</a></li>
+            <li class="menu-item"><a href=" https://www.eventbrite.com.br/e/python-nordeste-2023-tickets-685066200447 "
+                    target=" _blank" rel="noopener noreferrer">Inscrições</a></li>
+            <li class="menu-item"><a href="https://pretalx.com/python-nordeste-2023/schedule/" target="_blank"
+                    rel="noopener noreferrer">Grade
+                    de palestras</a></li>
+            <li class="menu-item"><a href="#sponsor">Como patrocinar</a></li>
+            <li class="menu-item"><a href="cdc.html" target="_blank" rel="noopener noreferrer">Código de conduta</a>
+            </li>
+            <li class="menu-item"><a href="#social-media">Redes sociais</a></li>
+            <li class="menu-item"><a href="orientacoes.html" rel="noopener noreferrer">Orientações para a Covid-19</a>
+            </li>
+        </ul>
+        <div class="navbar-btn" id="nav-toggle">
+            <i class="iconoir-menu-scale"></i>
         </div>
     </nav>
 
@@ -249,6 +248,8 @@
             </div>
         </footer>
         <script src="https://unpkg.com/htmlincludejs"></script>
+        <script src="script.js"></script>
+
 </body>
 
 </html>
