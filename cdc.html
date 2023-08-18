@@ -65,97 +65,188 @@
 
 <body>
 
-    <nav class="navbar" id="navbar">
-        <a class="nav-link" href="#">Home</a>
-        <a class="nav-link" href="#intro">Sobre a cidade</a>
-        <a class="nav-link" href="#sponsor">Como patrocinar</a>
-        <a class="nav-link" href="cdc.html" target="_blank">Código de conduta</a>
-        <a class="nav-link" href="#social-media">Redes sociais</a>
-        <a class="nav-link" href="orientacoes.html">Orientações para a Covid-19</a>
-        <a class="icon" href="javascript:void(0);" onclick="myFunction()"><i class="iconoir-menu"></i></a>
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index.html" class="logo">
+                <img class="nav-logo" src="./img/assets/LOGO.png" alt="">
+            </a>
+        </div>
+
+        <ul class="navbar-menu" id="nav-list">
+            <li class="menu-item"><a href="#intro">Sobre a cidade</a></li>
+            <li class="menu-item"><a href=" https://www.eventbrite.com.br/e/python-nordeste-2023-tickets-685066200447 "
+                    target=" _blank" rel="noopener noreferrer">Inscrições</a></li>
+            <li class="menu-item"><a href="https://pretalx.com/python-nordeste-2023/schedule/" target="_blank"
+                    rel="noopener noreferrer">Grade
+                    de palestras</a></li>
+            <li class="menu-item"><a href="#sponsor">Como patrocinar</a></li>
+            <li class="menu-item"><a href="cdc.html" target="_blank" rel="noopener noreferrer">Código de conduta</a>
+            </li>
+            <li class="menu-item"><a href="#social-media">Redes sociais</a></li>
+            <li class="menu-item"><a href="orientacoes.html" rel="noopener noreferrer">Orientações para a Covid-19</a>
+            </li>
+        </ul>
+        <div class="navbar-btn" id="nav-toggle">
+            <i class="iconoir-menu-scale"></i>
+        </div>
     </nav>
 
-    <header class="main">
-        <section class="main-chamada">
-        <img class="main-hero" src="./img/assets/FITINHAS_VOANDO.png"
+    <header class="header">
+        <img class="header__hero" src="./img/assets/hero_pyne2023.png"
             aria-label="Fitas voando escrito Python Nordeste 2023">
-        <section class="main-chamada">
-            <img class="main-logo" src="./img/assets/LOGO.png" alt="logo da python nordeste">
-            <p class="main--descricao-callout">22 a 24 de setembro de 2023
+        <div class="header__intro">
+            <h1 class="header__callout__heading">Python Nordeste 2023</h1>
+            <h2 class="header__callout__subheading"><br>22 a 24 de setembro de 2023</h2>
+            <p class="header__callout__address">
+                <a href="https://goo.gl/maps/QmuKpDPjvXigJ9rV8"><br><b></b>Escola Politécnica da UFBA - R.
+                    Prof. Aristídes Novis, 2 - Federação,
+                    Salvador - BA, 40210-630
+                    </b>
             </p>
-        </section>
-       </section>s
+            </a>
+
+            <div class="header__c4p">
+                <a href="https://www.eventbrite.com.br/e/python-nordeste-2023-tickets-685066200447 " target="_blank"
+                    class="btn-subscriptions">
+                    Inscreva-se já!
+                </a>
+            </div>
+            <div class="header__c4p">
+                <a href="https://pretalx.com/python-nordeste-2023/schedule/" target="_blank" class="btn-c4p">Cronograma
+                    do evento</a>
+            </div>
+        </div>
     </header>
 
-
-    <section class="intro orientacoes" id="intro">
+    <section class="intro__wrapper" id="intro">
         <div class="intro--descricao">
-                <h2>Código de Conduta da Python Nordeste</h2>
-            <section class="intro-cidade">
-            <p>
-                A Python Nordeste visa garantir um espaço seguro para trocas de conhecimento através do esforço ativo em busca da pluralidade, inclusão e acolhimento. Para tanto, precisamos ter regras claras em assegurar o respeito por todas as pessoas envolvidas na PyNE. O Código de Conduta é aplicável para a Organização, Empresas Patrocinadoras, Palestrantes e Ministrantes de Atividades, Participantes, Fornecedores e Apoiadoras.
-            </p>
-            <p>
-                Por isso: <br><br>
-                        1- Não é tolerado nenhum tipo de assédio, perseguição ou humilhação pública; <br>
-                        2- Não é tolerado o descumprimento das leis brasileiras; <br>
-                        3- Toda pessoa presente no evento, independente do seu papel, está sujeita a estas regras; <br>
+            <h2 class="intro__headline">Código de Conduta da Python Nordeste</h2>
+            <section class="intro__descritpion">
+                <p>
+                    A Python Nordeste visa garantir um espaço seguro para trocas de conhecimento através do esforço
+                    ativo em busca da pluralidade, inclusão e acolhimento. Para tanto, precisamos ter regras claras em
+                    assegurar o respeito por todas as pessoas envolvidas na PyNE. O Código de Conduta é aplicável para a
+                    Organização, Empresas Patrocinadoras, Palestrantes e Ministrantes de Atividades, Participantes,
+                    Fornecedores e Apoiadoras.
                 </p>
-            <p>
-                Desta forma, entendemos que:<br><br>
+                <p>
+                    Por isso: <br><br>
+                    1- Não é tolerado nenhum tipo de assédio, perseguição ou humilhação pública; <br>
+                    2- Não é tolerado o descumprimento das leis brasileiras; <br>
+                    3- Toda pessoa presente no evento, independente do seu papel, está sujeita a estas regras. <br>
+                </p>
+                <p>
+                    Desta forma, entendemos que:<br>
 
-                1- Assédio é a ação de insistir, perseguir ou coagir outra pessoa a um comportamento involuntário.  <br>
-                2- Discriminação inapropriada é o ato de separar, injuriar ou humilhar alguém promovendo sua exclusão por atributo particular da mesma.  <br>
-                3- Humilhação pública é o ato de submeter, rebaixar, ridicularizar ou promover o vexame de outro publicamente.  <br>
-                4- O público-alvo do evento também inclui crianças e adolescentes, por isso buscamos manter um ambiente apropriado para todas as faixas etárias. Sendo assim, linguagem e imagens sexualizadas não são adequados para palestras e ações promocionais de patrocinadores.  <br>
-            </p>
-            <p>
-                Se você se sentiu assediada(o), perseguida(o) ou humilhado(o), ou presenciou alguma destas atitudes, por favor entre em contato com a <a href="mailto:nordeste@python.org.br">Equipe de Resposta do Código de Conduta.</a>.
-            </p>
-            <p>
-                Havendo um relato de violação destes princípios, a Equipe de Resposta realizará a devida análise e, quando necessário, tomará as ações para impedir a reincidência. Estas ações podem, mas não se restringem nem implicam em ir desde uma conversa em busca da retratação até um convite a se retirar do evento por tempo indeterminado.
-            </p>
-            <p class="text-center">
-                O Código de Conduta acima foi baseado na versão desenvolvida pela Python Brasil & APyB (Associação Python Brasil).
+                    1- Assédio é a ação de insistir, perseguir ou coagir outra pessoa a um comportamento involuntário.
+                    <br>
+                    2- Discriminação inapropriada é o ato de separar, injuriar ou humilhar alguém promovendo sua
+                    exclusão por atributo particular da mesma. <br>
+                    3- Humilhação pública é o ato de submeter, rebaixar, ridicularizar ou promover o vexame de outro
+                    publicamente. <br>
+                    4- O público-alvo do evento também inclui crianças e adolescentes, por isso buscamos manter um
+                    ambiente apropriado para todas as faixas etárias. Sendo assim, linguagem e imagens sexualizadas não
+                    são adequados para palestras e ações promocionais de patrocinadores. <br>
+                </p>
+                <p>
+                    Se você se sentiu assediada(o), perseguida(o) ou humilhado(o), ou presenciou alguma destas atitudes,
+                    por favor entre em contato com a <a href="mailto:nordeste@python.org.br">Equipe de Resposta do
+                        Código de Conduta</a>.
+                </p>
+                <p>
+                    Havendo um relato de violação destes princípios, a Equipe de Resposta realizará a devida análise e,
+                    quando necessário, tomará as ações para impedir a reincidência. Estas ações podem, mas não se
+                    restringem nem implicam em ir desde uma conversa em busca da retratação até um convite a se retirar
+                    do evento por tempo indeterminado.
+                </p>
+            </section>
+            <p class="footer__footnote">
+                O Código de Conduta acima foi baseado na versão desenvolvida pela Python Brasil & APyB (Associação
+                Python Brasil)
                 <a href="https://python.org.br/cdc/" class="padrao">
-                    PYTHON BRASIL CoC
+                    - Código de Conduta da Python Brasil
                 </a>
             </p>
-            </section>
 
         </div>
     </section>
 
 
+    <article class="sponsors-list">
+        <h3>Confira as nossas patrocinadoras e apoiadoras!</h3>
+        <h4>Ouro</h4>
+        <div class="sponsors-list__ouro">
+            <a href="https://www.elastic.co/pt/about" class="sponsor-list"><img src="./img/assets/elastic.png"
+                    alt="Elastic" /></a>
+        </div>
+        <h4>Bronze</h4>
+        <div class="sponsors-list__bronze">
+            <a href="https://www.globo.com/" class="sponsor-list"><img src="./img/assets/globo.png" alt="Globo" /></a>
+            <a href="https://www.vinta.com.br/" class="sponsor-list"><img src="./img/assets/vinta.png"
+                    alt="Vinta" /></a>
+        </div>
+        <div class="sponsors-list__apoiadores">
+            <h4>Apoiadores</h4>
+            <div class="sponsors-flex">
+                <a href="https://www.eng.ufba.br/" class="sponsors-flex"><img src="./img/assets/ufba.png"
+                        alt="UFBA" /></a>
+                <a href="https://www.instagram.com/cienciadedadosnaep/" class="sponsors-flex"><img
+                        src="./img/assets/naep.png" alt="NAEP" /></a>
+                <a href="https://gamma-ufba.github.io/index.html" class="sponsors-flex"><img
+                        src="./img/assets/gamma-ufba.png" alt="GAMMA"></a>
+            </div>
+        </div>
+    </article>
+    <article class="localizacao">
+        <section class="localizacao--texto">
+            <h2>Confira o local do evento</h2>
+            <p>A PyNE 2023 será sediada na Escola Politécnica da UFBA <br>(Universidade Federal da Bahia) -
+                Salvador
+            </p>
+            <br>
+            <p>R. Prof. Aristídes Novis, 2 - Federação, Salvador - BA, 40210-630</p>
+        </section>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.56535363496!2d-38.512876424041686!3d-12.999628560375259!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x716049dd45f3533%3A0x6e449a7096d9e5e0!2sEscola%20Polit%C3%A9cnica%20da%20UFBA!5e0!3m2!1spt-BR!2sbr!4v1685062528945!5m2!1spt-BR!2sbr"
+            width="400" height="300" style=" border: 10px double #f7931e; outline: 10px double #299BA6;"
+            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+    <footer>
+        <div class="footer__social">
 
+            <div class="social-media" id="social-media">
+                <div class="social-media__list">
+                    <a href="mailto:nordeste@python.org.br" target="_blank" rel="noopener noreferrer">
+                        <img class="social-media--icons" src="./img/icons/EMAIL.svg" alt="Email" />
+                        <!-- nordeste@python.org.br -->
+                    </a>
+                    <a href="https://www.instagram.com/pythonnordeste/" target="_blank" rel="noopener noreferrer">
+                        <img class="social-media--icons" src="./img/icons/INSTAGRAM.svg" alt="Instagram" />
+                    </a>
+                    <a href="https://twitter.com/pythonnordeste" target="_blank" rel="noopener noreferrer">
+                        <img class="social-media--icons" src="./img/icons/TWITTER.svg" alt="Twitter" />
+                    </a>
+                    <a href="https://www.linkedin.com/company/python-nordeste-2022/" target="_blank"
+                        rel="noopener noreferrer">
+                        <img class="social-media--icons" src="./img/icons/LINKEDIN.svg" alt="Linkedin" />
+                    </a>
 
-    <div class="social-media" id="social-media">
-        <h3 class="social-media--text-center">
-            Siga-nos nas nossas redes:
-        </h3>
-        <ul>
-            <li><a href="mailto:nordeste@python.org.br" target="_blank" rel="noopener noreferrer">
-                    <img class="social-media--icons" src="./img/icons/EMAIL.svg" alt="Email">
-                    nordeste@python.org.br
-                </a></li>
-            <li> <a href="https://www.instagram.com/pythonnordeste/" target="_blank" rel="noopener noreferrer">
-                    <img class="social-media--icons" src="./img/icons/INSTAGRAM.svg" alt="Instagram">@pythonnordeste
-                </a></li>
-            <li> <a href="https://twitter.com/pythonnordeste" target="_blank" rel="noopener noreferrer">
-                    <img class="social-media--icons" src="./img/icons/TWITTER.svg" alt="Twitter">@pythonnordeste
-                </a> </li>
-            <li><a href="https://www.linkedin.com/company/python-nordeste-2022/" target="_blank"
-                    rel="noopener noreferrer">
-                    <img class="social-media--icons" src="./img/icons/LINKEDIN.svg" alt="Linkedin">/PythonNordeste
-                </a></li>
-        </ul>
-    </div>
-
-    <footer class="footer">
-        <small class="footer--note">
-            22 a 24 de setembro de 2023 | Salvador - BA, Brasil | Feito com <3 pelos pythonistas nordestinos </small>
+                </div>
+                <div class="footer__footnote">
+                    <a class="footer__footnote" href="mailto:nordeste@python.org.br">
+                        <p>nordeste@python.org.br</p>
+                    </a>
+                    <hr>
+                    <small class="footer__note">
+                        22 a 24 de setembro de 2023 | Salvador - BA, Brasil | Feito com <3 por pythonistas nordestinos
+                            </small>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="js/scripts.js"></script>
+    <script src="https://unpkg.com/htmlincludejs"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
