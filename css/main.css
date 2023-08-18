@@ -397,20 +397,16 @@ body {
   max-height: 100px;
 }
 
-.sponsor-texto h3,
 .sponsors-list h4,
+.sponsor-texto h3,
 .sponsor-texto p {
-  color: #fff;
+  color: #299ba6;
   margin-bottom: 1.5rem;
 }
 
 h4 {
   color: #000;
   font-weight: 700;
-}
-
-.sponsor {
-  background-color: #141414;
 }
 
 .sponsor h2 {
