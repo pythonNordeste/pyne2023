@@ -126,13 +126,13 @@ table {
 }
 
 .nav {
-  height: 50px;
   width: 100%;
-  background-color: #fff;
-  position: sticky;
   top: 0px;
+  position: sticky;
+  /* overflow: hidden; */
+  background-color: #fff;
+  position: relative;
   box-shadow: 0px 2px #f7931e;
-  z-index: 4;
 }
 
 .nav > .nav-header {
@@ -143,7 +143,7 @@ table {
   display: inline-block;
   font-size: 22px;
   color: #fff;
-  padding: 10px 10px 10px 10px;
+  padding: 10px;
 }
 
 .nav-title img {
@@ -154,6 +154,9 @@ table {
 .nav > .nav-btn {
   display: none;
 }
+/* position: fixed;
+top: 0px;
+z-index: 10; */
 
 .nav > .nav-links {
   display: inline;
@@ -169,7 +172,7 @@ table {
 }
 
 .nav > .nav-links > a:hover {
-  background-color: #fff;
+  background-color: #f9ab4f;
 }
 
 .nav > #nav-check {
@@ -191,7 +194,7 @@ table {
   }
   .nav > .nav-btn > label:hover,
   .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: #fff;
+    background-color: #eee;
   }
   .nav > .nav-btn > label > span {
     display: block;
@@ -257,10 +260,15 @@ body {
 }
 
 .header__callout__address {
+  padding: 1rem;
+}
+
+.header__callout__address a {
   font-weight: 500;
   font-size: 1rem;
   padding: 1rem;
   color: #299ba6;
+  text-decoration: none;
 }
 
 .header__intro {
@@ -522,21 +530,6 @@ h4 {
   margin: 0.75rem;
 }
 
-.navbar button {
-  border: 0;
-  background-color: #f2a56d;
-}
-
-.navbar button:hover {
-  border: white;
-  background-color: #299ba6;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #4b4949;
-}
-
 footer {
   width: 100%;
   color: #fff;
@@ -593,46 +586,8 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-  .navbar a:not(:last-child) {
-    display: none;
-  }
-  .navbar a.icon {
-    color: black;
-    float: right;
-    display: block;
-  }
   .footer__footnote {
     font-size: 0.75rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .navbarresponsive {
-    background-color: #f7931e;
-  }
-  .navbarresponsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 20px;
-  }
-  .navbarresponsive .nav-link {
-    float: none;
-    display: flex;
-    text-align: left;
-    text-decoration: none;
-    color: white;
-    padding: 20px;
-    font-size: 14px;
-  }
-  .navbarresponsive .nav-link:hover {
-    /* background-color: #FBC689; */
-    color: #141414;
-  }
-
-  .navbarresponsive .nav-link:focus {
-    box-shadow: 0 0 10px#6177E5, 0 0 20px#6177E5, 0 0 40px#6177E5;
-    background-color: #6177e5;
   }
 }
 
@@ -685,9 +640,6 @@ footer {
     font-size: 0.25rem;
     text-align: center;
     padding-bottom: 1rem;
-  }
-  .navbar {
-    flex-direction: row;
   }
   i:before,
   .i:before {
