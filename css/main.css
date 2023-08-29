@@ -426,7 +426,8 @@ h4 {
   font-weight: 500;
 }
 
-.sponsors-list__apoiadores {
+.sponsors-list__apoiadores,
+.sponsors-list__fornecedores {
   padding-top: 3rem;
 }
 
@@ -449,7 +450,8 @@ h4 {
   width: 70%;
 }
 
-.sponsors-list__apoiadores img {
+.sponsors-list__apoiadores img,
+.sponsors-list__fornecedores img {
   width: 60%;
 }
 
