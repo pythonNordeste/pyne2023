@@ -371,10 +371,6 @@ body {
   margin: auto;
 }
 
-/* .sponsor-texto .c4p {
-  margin: 60px;
-} */
-
 .sponsors-list {
   padding-bottom: 3rem;
   align-self: center;
@@ -382,11 +378,11 @@ body {
 }
 
 .sponsor-texto h3,
-.sponsors-list h3,
+.sponsors-list__headline,
 .localizacao--texto h3 {
   font-size: 1.25rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 3.75rem;
   margin-right: 1rem;
 }
 
@@ -400,7 +396,6 @@ body {
 .sponsors-list h4,
 .sponsor-texto h3,
 .sponsor-texto p {
-  color: #299ba6;
   margin-bottom: 1.5rem;
 }
 
@@ -410,7 +405,7 @@ h4 {
 }
 
 .sponsor h2 {
-  color: #f7931e;
+  color: #39b54a;
 }
 
 .sponsors-list {
@@ -426,14 +421,15 @@ h4 {
   font-weight: 500;
 }
 
-.sponsors-list__apoiadores,
-.sponsors-list__fornecedores {
+.sponsors-list--apoiadores {
   padding-top: 3rem;
 }
 
 .sponsors-flex,
-.sponsors-list__bronze,
-.sponsors-list__ouro {
+.sponsors-list--bronze,
+.sponsors-list--ouro,
+.sponsors-list--diamante,
+.sponsors-list--apoiadores {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -442,31 +438,56 @@ h4 {
   gap: 40px;
 }
 
-.sponsors-list__ouro img {
+.sponsors-list--diamante img {
+  display: block;
+  max-width: 280px;
+  max-height: 120px;
+  width: auto;
+  height: auto;
+}
+
+.sponsors-list--ouro img {
   width: 240px;
 }
 
-.sponsors-list__bronze img {
+.sponsors-list--bronze img {
   width: 70%;
 }
 
-.sponsors-list__apoiadores img,
-.sponsors-list__fornecedores img {
+.sponsors-list--apoiadores img {
   width: 60%;
+}
+
+.sponsors-list__heading--diamante {
+  color: #299ba6;
+}
+
+.sponsors-list__heading--ouro {
+  color: #a38a00;
+}
+
+.sponsors-list__heading--bronze {
+  color: #cd7f32;
+}
+
+.sponsors-list__heading--apoiadores {
+  color: #39b54a;
 }
 
 @media (min-width: 768px) {
   .sponsors-flex,
-  .sponsors-list__bronze,
-  .sponsors-list__ouro {
+  .sponsors-list--bronze,
+  .sponsors-list--ouro,
+  .sponsors-list--diamante {
     flex-direction: row;
   }
 }
 
 @media (min-width: 1440px) {
   .sponsors-flex,
-  .sponsors-list__bronze,
-  .sponsors-list__ouro {
+  .sponsors-list--bronze,
+  .sponsors-list--ouro,
+  .sponsors-list--diamante {
     gap: 5rem;
   }
 }
